@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+:root {
+  --main-color: #792c26;
+  --second-color: #8f8796;
+}
+
+.title {
+  color: var(--main-color);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.title:hover {
+  color: aliceblue;
+}
+.top-navbar {
+  background-color: var(--second-color);
+}
+.top-navbar header .active {
+  background-color: var(--main-color);
+  color: black;
+  font-weight: bold;
+  opacity: 0.8;
+}
+.top-navbar button {
+  background-color: var(--main-color);
+  color: aliceblue;
+}
+
+.top-navbar button:hover {
+  background-color: var(--main-color);
+  color: aliceblue;
+  opacity: 0.8;
+}
+.list {
+  list-style: none;
+}
+.list a li i {
+  color: aliceblue;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.list a li i:hover {
+  color: var(--main-color);
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.navbar-brand img {
+  width: 100px;
+}
+.offcanvas {
+  transition: ease-in-out 1s;
+  -webkit-transition: ease-in-out 1s;
+  -moz-transition: ease-in-out 1s;
+  -ms-transition: ease-in-out 1s;
+  -o-transition: ease-in-out 1s;
+}
+.canHover .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.show {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  background-color: var(--main-color);
+  color: var(--main-color);
+}
+.show .offcanvas-body ul li {
+  margin: 7px;
+}
+
+.show .offcanvas-body ul li a {
+  color: rgb(0, 0, 0);
+}
+.dropdown-item {
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+.anwan {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+}
+.anwan a {
+  color: #ced4da;
+}
+.anwan li {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.nav-link {
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.nav-link:hover {
+  background-color: var(--main-color);
+  color: #968b87;
+}
+.navbar-brand {
+  position: relative;
+  animation: logo infinite 5s;
+  -webkit-animation: logo infinite 5s;
+}
+@keyframes logo {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 70px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.dropdown-menu {
+  width: max-content;
+  background-color: var(--second-color);
+  color: aliceblue;
+}
+.dropdown-menu .dropdown-item {
+  color: rgb(0, 0, 0);
+}
+.dropdown-item:hover {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.navbar-toggler {
+  background-color: var(--main-color);
+}
+
+.pic {
+  height: 95vh;
+  background-image: url(/media/img/colleges/arnold-francisca-nPhl2x4fk2s-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.main {
+  background-image: url(/media/img/marjan-blan-794QUz5-cso-unsplash.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.album {
+  background-color: var(--second-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.depTitle,
+.newsTitle,
+.numsTitle {
+  width: 50%;
+  margin: auto;
+  border-right: 4px solid var(--main-color);
+  border-left: 4px solid var(--main-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 3s;
+  -webkit-transition: all 3s;
+  -moz-transition: all 3s;
+  -ms-transition: all 3s;
+  -o-transition: all 3s;
+  transform: rotateY(150deg);
+  -webkit-transform: rotateY(150deg);
+  -moz-transform: rotateY(150deg);
+  -ms-transform: rotateY(150deg);
+  -o-transform: rotateY(150deg);
+}
+
+.count {
+  letter-spacing: 2px;
+  width: 50%;
+  margin: auto;
+  border-right: 4px solid var(--main-color);
+  border-left: 4px solid var(--main-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.numbers {
+  height: 30vh;
+}
+span.num {
+  color: var(--main-color);
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+span.text {
+  color: #e0e0e0;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+}
+.featurette-divider {
+  margin: 5rem 0;
+}
+.featurette-heading {
+  letter-spacing: -0.05rem;
+}
+
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+.department {
+  background-image: url(/media/img/marjan-blan-794QUz5-cso-unsplash.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.lead {
+  color: var(--main-color);
+  font-weight: 500;
+}
+.manseb {
+  max-width: 200px;
+}
+.depTitle.animate,
+.newsTitle.animate,
+.numsTitle.animate {
+  transform: rotateY(0);
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+}
+.news-1 {
+  transform: translateX(1500px);
+  -webkit-transform: translateX(1500px);
+  -moz-transform: translateX(1500px);
+  -ms-transform: translateX(1500px);
+  -o-transform: translateX(1500px);
+  transition: all 3s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 3s;
+  -ms-transition: all 3s;
+  -o-transition: all 3s;
+}
+.news-1.animate {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.news-2 {
+  transform: translateX(-1500px);
+  -webkit-transform: translateX(-1500px);
+  -moz-transform: translateX(-1500px);
+  -ms-transform: translateX(-1500px);
+  -o-transform: translateX(-1500px);
+  transition: all 3s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 3s;
+  -ms-transition: all 3s;
+  -o-transition: all 3s;
+}
+.news-2.animate {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.news-3 {
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.news-3.animate {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  opacity: 1;
+}
+.cs .descripe {
+  transform: translateX(-800px);
+  -webkit-transform: translateX(-800px);
+  -moz-transform: translateX(-800px);
+  -ms-transform: translateX(-800px);
+  -o-transform: translateX(-800px);
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+.cs .photo {
+  transform: translateX(800px);
+  -webkit-transform: translateX(800px);
+  -moz-transform: translateX(800px);
+  -ms-transform: translateX(800px);
+  -o-transform: translateX(800px);
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+.cs .descripe.animate,
+.cs .photo.animate {
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+}
+.it .descripe {
+  transform: translateX(800px);
+  -webkit-transform: translateX(800px);
+  -moz-transform: translateX(800px);
+  -ms-transform: translateX(800px);
+  -o-transform: translateX(800px);
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+.it .photo {
+  transform: translateX(-800px);
+  -webkit-transform: translateX(-800px);
+  -moz-transform: translateX(-800px);
+  -ms-transform: translateX(-800px);
+  -o-transform: translateX(-800px);
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+.it .descripe.animate,
+.it .photo.animate {
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+}
+.is .descripe {
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  opacity: 0;
+}
+.is .photo {
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  opacity: 0;
+}
+.is .descripe.animate,
+.is .photo.animate {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  opacity: 1;
+}
+.footer {
+  background-color: var(--main-color);
+}
+.footer .nav li a {
+  color: aliceblue;
+}
+.footer .nav li a:hover {
+  color: var(--main-color);
+  background-color: var(--second-color);
+}
+.footer-brands {
+  margin: auto;
+  list-style: none;
+}
+.footer-brands a li i {
+  transition: all 0.6s;
+  color: aliceblue;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+.footer-brands a li i:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.fa-circle-up {
+  position: fixed;
+  bottom: 10%;
+  left: 1.3%;
+  font-size: 40px;
+  color: var(--main-color);
+  cursor: pointer;
+  z-index: 888;
+}
